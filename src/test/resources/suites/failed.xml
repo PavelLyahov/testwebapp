@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="UI tests">
+
+    <test name="CheckRandomFeatures">
+        <classes>
+            <class name="web.tests.FailedElementTest"/>
+        </classes>
+    </test>
+</suite>
