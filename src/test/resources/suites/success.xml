@@ -5,6 +5,7 @@
     <test name="CheckElements">
         <classes>
             <class name="web.tests.SuccessElementTest"/>
+            <class name="web.tests.TestSimpleJavaApp"/>
         </classes>
     </test>
 </suite>

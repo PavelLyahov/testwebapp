@@ -1,0 +1,24 @@
+pipeline {
+   agent any
+
+   stages {
+        stage('Testing') {
+            steps {
+                bat "mvn clean test"
+            }
+        }
+        stage('Build info') {
+            steps {
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+            }
+        }
+   }
+
+   post {
+       always {
+           echo 'Clearing workspace'
+           cleanWs()
+       }
+   }
+
+}
